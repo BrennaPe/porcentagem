@@ -11,22 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
   
 </head>
+
 <body>
-  <h1>Sales Growth Calculator</h1>
+  <main>
+      <div id="container">
+          <h1>Sales Growth Calculator</h1>
+          <div id="input">
+              <div>
+                  <label for="week1">Week 1 Revenue (€):</label>
+                  <input type="number" id="week1" placeholder="Enter Week 1 revenue">
+              </div>
+              <div>
+                  <label for="week2">Week 2 Revenue (€):</label>
+                  <input type="number" id="week2" placeholder="Enter Week 2 revenue">
+              </div>
+          
+          <button onclick="calculateGrowth()">&#x2728 &#x2728&#x2728 &#x2728 &#x2728 </button> </div>
+          <h2 id="result"></h2>
+      </div>
+  </main>
 
-  <label for="week1">Week 1 Revenue (€):</label>
-  <input type="number" id="week1" placeholder="Enter Week 1 revenue">
 
-  <br><br>
 
-  <label for="week2">Week 2 Revenue (€):</label>
-  <input type="number" id="week2" placeholder="Enter Week 2 revenue">
-
-  <br><br>
-
-  <button onclick="calculateGrowth()">Calculate Growth</button>
-
-  <h2 id="result"></h2>
 
   <script>
     function calculateGrowth() {
@@ -47,9 +53,9 @@
       // Step 4: Show result
       let message = '';
       if (percentage > 0) {
-        message = `📈 Sales increased by ${percentage.toFixed(2)}%.`;
+        message = `📈💖🩷💞 Sales increased by ${percentage.toFixed(2)}%.`;
       } else if (percentage < 0) {
-        message = `📉 Sales decreased by ${Math.abs(percentage).toFixed(2)}%.`;
+        message = `📉☠️☠️☠️ Sales decreased by ${Math.abs(percentage).toFixed(2)}%.`;
       } else {
         message = `No change in sales.`;
       }
