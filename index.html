@@ -36,21 +36,21 @@
 
   <script>
     function calculateGrowth() {
-      // Step 1: Get the numbers from input
+      // passo 1: Get the numbers from input
       const week1 = Number(document.getElementById('week1').value);
       const week2 = Number(document.getElementById('week2').value);
 
-      // Step 2: Validate inputs
+      // passo 2: Validar inputs
       if (week1 <= 0) {
         document.getElementById('result').textContent = "Please enter a valid number for Week 1.";
         return;
       }
 
-      // Step 3: Calculate percentage change
+      // passo 3: Calculo da mudança de porcentagem
       const difference = week2 - week1;
       const percentage = (difference / week1) * 100;
 
-      // Step 4: Show result
+      // passo 4: Mostrar o resultado
       let message = '';
       if (percentage > 0) {
         message = `📈💖🩷💞 Sales increased by ${percentage.toFixed(2)}%.`;
